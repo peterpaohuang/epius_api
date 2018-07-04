@@ -24,7 +24,7 @@ gem 'redis', '~> 3.0'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
-
+gem "paperclip", "~> 6.0.0"
 gem 'devise'
 
 group :development, :test do
@@ -41,3 +41,9 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'rest-client'
+
+#Eliminate Stop Words
+gem 'stopwords-filter', require: 'stopwords'
+

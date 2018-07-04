@@ -6,5 +6,8 @@ Rails.application.routes.draw do
     # We are going to list our resources here
     resources :users, :only => [:show, :create, :update, :destroy, :index]
   	resources :sessions, :only => [:create, :destroy]
+  	resources :records, :only => [:show, :create, :update, :destroy, :index]
+
+  	mount ActionCable.server => '/cable'
   end
 end
